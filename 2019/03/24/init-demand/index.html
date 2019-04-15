@@ -84,7 +84,7 @@
 <meta property="og:site_name" content="一见">
 <meta property="og:description" content="目标中学生文言文学习软件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T17:11:38.094Z">
+<meta property="og:updated_time" content="2019-04-15T12:35:54.138Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初步需求分析">
 <meta name="twitter:description" content="目标中学生文言文学习软件">
@@ -320,13 +320,14 @@
         <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>中学生文言文学习软件</p>
 <a id="more"></a>
 <h2 id="目标客户"><a href="#目标客户" class="headerlink" title="目标客户"></a>目标客户</h2><p>上海市初高中学生</p>
-<h2 id="初步功能"><a href="#初步功能" class="headerlink" title="初步功能"></a>初步功能</h2><p>查词</p>
-<p>背词 —— 按照课文顺序，对通假、虚词等划分为section布置成学习任务</p>
+<h2 id="初步功能"><a href="#初步功能" class="headerlink" title="初步功能"></a>初步功能</h2><p>（以下内容只是初次的头脑风暴，需要最终请按照小程序的组成结构整理成树状结构）</p>
+<p>查词 —— 相当于提交一个表单交给后台进行处理，（微信小程序真的太小了）</p>
+<p>背词 —— 按照课文顺序，对通假、虚词等划分为 section 布置成学习任务</p>
 <ul>
 <li>类似于扇贝的一个单元</li>
 <li>形式为推送例句选择加点字的正确解释</li>
 </ul>
-<p>总结 —— 对于已经背过的词，可以对每个词生成一个表，表中记录了这个词的多个意思，已经每种意思对应的例句，便于学生记忆。</p>
+<p>总结 —— <strong>对于已经背过的词，可以对每个词生成一个表</strong>，表中记录了这个词的多个意思，已经每种意思对应的例句，便于学生记忆。</p>
 <p>常识 —— 对重要的人物的生平、事迹的介绍，介绍相关历史，旨在让学生遇到课外文言文阅读的时候，能够有一些背景知识</p>
 <ul>
 <li>在每日背词任务完成后推送一两条文化常识链接，介绍文章作者等</li>
@@ -334,6 +335,38 @@
 <p>每日一句（句子推荐）</p>
 <ul>
 <li>例句中的重点难点词汇，用户可直接点击查询具体信息</li>
+</ul>
+<h3 id="按照软件的框架进行描述"><a href="#按照软件的框架进行描述" class="headerlink" title="按照软件的框架进行描述"></a>按照软件的框架进行描述</h3><p>每日一句（句子推荐）</p>
+<ul>
+<li>例句中的重点难点词汇，用户可直接点击查询具体信息。类似于初次 demo 中的情况</li>
+</ul>
+<p>常识</p>
+<ul>
+<li>更希望作为一个单独的栏目，相比之下这是一个趣味性更强的栏目，而且能够更好地提升读者的综合素养，对于背景知识的了解绝对能够让使用者无论是学习课文，还是回答课外文言文习题的时候都更有优势。这也是我们<strong>与众不同</strong>的一点。</li>
+<li>可以考虑小故事的形式</li>
+</ul>
+<p>查词</p>
+<ul>
+<li>单独作为一个栏目。因为小程序的大小限制，因此只能作为表单，访问服务器</li>
+<li>在模块学习、每日一句栏目中，最好能够做到长按一个字/词也能跳转查字典的形式</li>
+</ul>
+<p>背词</p>
+<ul>
+<li>按照课文的方式进行组织，参考扇贝”单词书”和”section”的模式</li>
+<li>重要的内容，如实词、虚词</li>
+<li>总结（学习回顾）：在每个 section 学习完之后，类似扇贝，给出一个表格，简要总结这个 section 学过的内容</li>
+<li>学习曲线主要在这里进行体现，在学习每个 section 之前，会按照学习曲线，对之前的一些内容进行复习</li>
+<li>在背词中给出每个section的学习进度</li>
+</ul>
+<p>我的</p>
+<ul>
+<li>收藏</li>
+<li>显示内容</li>
+<li>设置<ul>
+<li>学习量、学习曲线等</li>
+</ul>
+</li>
+<li>关于</li>
 </ul>
 <h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><p>答题游戏 —— 完成每日的学习任务后可以参加答题游戏</p>
 <ul>
@@ -489,7 +522,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目标"><span class="nav-number">1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标客户"><span class="nav-number">2.</span> <span class="nav-text">目标客户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步功能"><span class="nav-number">3.</span> <span class="nav-text">初步功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进阶功能"><span class="nav-number">4.</span> <span class="nav-text">进阶功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目标"><span class="nav-number">1.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标客户"><span class="nav-number">2.</span> <span class="nav-text">目标客户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步功能"><span class="nav-number">3.</span> <span class="nav-text">初步功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#按照软件的框架进行描述"><span class="nav-number">3.1.</span> <span class="nav-text">按照软件的框架进行描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进阶功能"><span class="nav-number">4.</span> <span class="nav-text">进阶功能</span></a></li></ol></div>
             
 
           </div>
